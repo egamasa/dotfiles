@@ -1,0 +1,33 @@
+{
+    "editor.fontFamily": "'HackGenNerd'",
+    "editor.renderWhitespace": "all",
+    "vsicons.dontShowNewVersionMessage": true,
+
+    "php.validate.executablePath": "C:\\php\\php.exe",
+    "php.validate.run": "onType",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "remote.SSH.remotePlatform": {
+        "Laravel_local": "linux"
+    },
+    "window.zoomLevel": 0,
+    "git.autofetch": true,
+    "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWw7YmFzaWM7YXJyb3dzMjtmbG93Y2hhcnQ7Ym9vdHN0cmFwO25ldHdvcms7b2ZmaWNlXCIsXCJjdXN0b21MaWJyYXJpZXNcIjpbXCJMLnNjcmF0Y2hwYWRcIl0sXCJwbHVnaW5zXCI6W10sXCJyZWNlbnRDb2xvcnNcIjpbXCIzMzMzMzNcIixcIkNDQ0NDQ1wiLFwiMDAwMDAwXCIsXCJGRjk5Q0NcIixcIjAwOTk5OVwiXSxcImZvcm1hdFdpZHRoXCI6XCIyNDBcIixcImNyZWF0ZVRhcmdldFwiOmZhbHNlLFwicGFnZUZvcm1hdFwiOntcInhcIjowLFwieVwiOjAsXCJ3aWR0aFwiOjgyNyxcImhlaWdodFwiOjExNjl9LFwic2VhcmNoXCI6dHJ1ZSxcInNob3dTdGFydFNjcmVlblwiOnRydWUsXCJncmlkQ29sb3JcIjpcIiNkMGQwZDBcIixcImRhcmtHcmlkQ29sb3JcIjpcIiM2ZTZlNmVcIixcImF1dG9zYXZlXCI6dHJ1ZSxcInJlc2l6ZUltYWdlc1wiOm51bGwsXCJvcGVuQ291bnRlclwiOjAsXCJ2ZXJzaW9uXCI6MTgsXCJ1bml0XCI6MSxcImlzUnVsZXJPblwiOmZhbHNlLFwidWlcIjpcIlwifSJ9",
+    "python.languageServer": "Pylance",
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "files.autoSave": "off",
+    "terminal.integrated.fontFamily": "'HackGenNerd'",
+    "editor.fontSize": 14.4,
+    "terminal.integrated.cursorStyle": "underline",
+    "terminal.integrated.letterSpacing": 1,
+    "editor.autoClosingQuotes": "beforeWhitespace",
+    "editor.autoClosingBrackets": "beforeWhitespace",
+    "editor.dragAndDrop": false,
+    "editor.emptySelectionClipboard": false,
+    "editor.roundedSelection": false,
+    "editor.smoothScrolling": true,
+    "editor.minimap.enabled": false,
+    "editor.tabSize": 2,
+    "editor.cursorBlinking": "phase",
+}
