@@ -37,8 +37,8 @@ link() {
 
 # Kiro - folder links
 for dir in agents prompts steering skills; do
-  link "$DOTFILES/kiro/$dir" "$HOME/.kiro/$dir"
+  link "$DOTFILES/.kiro/$dir" "$HOME/.kiro/$dir"
 done
 
 # Kiro - file links
-link "$DOTFILES/kiro/settings/cli.json" "$HOME/.kiro/settings/cli.json"
+link "$DOTFILES/.kiro/settings/cli.json" "$HOME/.kiro/settings/cli.json"
