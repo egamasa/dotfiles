@@ -1,2 +1,9 @@
+.DS_Store
+*.swp
+*.swo
+*~
+.bashrc.local
+.zshrc.local
+
 # Kiro
 .kiro/agents/agent_config.json.example
