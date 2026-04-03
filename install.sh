@@ -64,6 +64,9 @@ fi
 link "$DOTFILES/.zshrc" "$HOME/.zshrc"
 link "$DOTFILES/.zprofile" "$HOME/.zprofile"
 
+# Starship
+link "$DOTFILES/.config/starship.toml" "$HOME/.config/starship.toml"
+
 # Kiro - folder links
 for dir in agents prompts steering skills; do
   link "$DOTFILES/.kiro/$dir" "$HOME/.kiro/$dir"
