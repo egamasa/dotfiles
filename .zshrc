@@ -35,6 +35,8 @@ alias egrep='egrep --color=auto'
 alias ll='ls -alhF'
 alias la='ls -AF'
 alias l='ls -CF'
+alias dua='du -sh ./* | sort -rh'
+alias dud='du -sh ./*/ | sort -rh'
 
 # rbenv
 eval "$(~/.rbenv/bin/rbenv init - --no-rehash zsh)"
