@@ -38,6 +38,13 @@ alias l='ls -CF'
 alias dua='du -sh ./* | sort -rh'
 alias dud='du -sh ./*/ | sort -rh'
 
+# fnm
+FNM_PATH="/home/ubuntu/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="$FNM_PATH:$PATH"
+  eval "$(fnm env --shell zsh)"
+fi
+
 # rbenv
 eval "$(~/.rbenv/bin/rbenv init - --no-rehash zsh)"
 
@@ -54,12 +61,10 @@ eval "$(goenv init -)"
 export PATH="$GOROOT/bin:$PATH"
 export PATH="$PATH:$GOPATH/bin"
 
-# nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-
 # Starship
 eval "$(starship init zsh)"
+
+export PATH="$HOME/.local/bin:$PATH"
 
 # Kiro CLI post block. Keep at the bottom of this file.
 [[ -f "${HOME}/.local/share/kiro-cli/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/.local/share/kiro-cli/shell/zshrc.post.zsh"
