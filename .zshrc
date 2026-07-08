@@ -64,6 +64,9 @@ export PATH="$PATH:$GOPATH/bin"
 # Starship
 eval "$(starship init zsh)"
 
+# Set VS Code as default editor
+export EDITOR="code --wait"
+
 export PATH="$HOME/.local/bin:$PATH"
 
 # Kiro CLI post block. Keep at the bottom of this file.
