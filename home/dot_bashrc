@@ -15,13 +15,6 @@ PROMPT_COMMAND='history -a; history -n'
 shopt -s checkwinsize
 
 # Aliases
-alias ls='ls --color=auto'
-alias grep='grep --color=auto'
-
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-
 [ -f ~/.bash_aliases ] && . ~/.bash_aliases
 
 # Completion
