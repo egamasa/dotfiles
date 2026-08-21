@@ -1,7 +1,0 @@
-{
-  "chat.defaultAgent": "default",
-  "chat.defaultModel": "claude-sonnet-4.6",
-  "chat.disableAutoCompaction": true,
-  "mcp.loadedBefore": true,
-  "telemetry.enabled": false
-}
