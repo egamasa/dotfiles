@@ -12,7 +12,6 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 HISTSIZE=10000
 HISTFILESIZE=20000
-PROMPT_COMMAND="${PROMPT_COMMAND:+${PROMPT_COMMAND}; }history -a; history -n"
 
 # Window resize
 shopt -s checkwinsize
