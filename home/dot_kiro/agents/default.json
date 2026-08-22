@@ -1,0 +1,21 @@
+{
+  "name": "default",
+  "description": "Default agent with auto-approved readonly commands",
+  "tools": ["*"],
+  "allowedTools": ["read", "web_search", "web_fetch"],
+  "resources": [
+    "file://.kiro/steering/**/*.md",
+    "skill://.kiro/skills/**/SKILL.md",
+    "skill://~/.kiro/skills/**/SKILL.md"
+  ],
+  "toolsSettings": {
+    "shell": {
+      "autoAllowReadonly": true,
+      "denyByDefault": true,
+      "allowedCommands": [
+        "(cd [^&]+ && )?(ls|find|cat|head|tail|wc|grep|diff|file|which|echo|pwd)( .*)?",
+        "(cd [^&]+ && )?git (status|diff|log|show|stash list)( .*)?"
+      ]
+    }
+  }
+}

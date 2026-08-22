@@ -1,3 +1,6 @@
+# Kiro CLI pre block. Keep at the top of this file.
+[[ -f "${HOME}/.local/share/kiro-cli/shell/bashrc.pre.bash" ]] && builtin source "${HOME}/.local/share/kiro-cli/shell/bashrc.pre.bash"
+
 # Interactive shell only
 case $- in
     *i*) ;;
@@ -9,7 +12,7 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 HISTSIZE=10000
 HISTFILESIZE=20000
-PROMPT_COMMAND='history -a; history -n'
+PROMPT_COMMAND="${PROMPT_COMMAND:+${PROMPT_COMMAND}; }history -a; history -n"
 
 # Window resize
 shopt -s checkwinsize
@@ -25,3 +28,6 @@ shopt -s checkwinsize
 if command -v starship >/dev/null 2>&1; then
     eval "$(starship init bash)"
 fi
+
+# Kiro CLI post block. Keep at the bottom of this file.
+[[ -f "${HOME}/.local/share/kiro-cli/shell/bashrc.post.bash" ]] && builtin source "${HOME}/.local/share/kiro-cli/shell/bashrc.post.bash"
