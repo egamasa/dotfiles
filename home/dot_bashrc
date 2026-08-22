@@ -23,8 +23,9 @@ shopt -s checkwinsize
 [ -f /usr/share/bash-completion/bash_completion ] && \
     . /usr/share/bash-completion/bash_completion
 
-# ble.sh
-[[ -f ~/.local/share/blesh/ble.sh ]] && source ~/.local/share/blesh/ble.sh
+# ble.sh (load)
+[[ $- == *i* ]] && [[ -f ~/.local/share/blesh/ble.sh ]] && \
+    source -- ~/.local/share/blesh/ble.sh --attach=none
 
 # Starship
 if command -v starship >/dev/null 2>&1; then
@@ -32,7 +33,12 @@ if command -v starship >/dev/null 2>&1; then
 fi
 
 # mise
-eval "$(~/.local/bin/mise activate bash)"
+if [[ -x ~/.local/bin/mise ]]; then
+    eval "$(~/.local/bin/mise activate bash)"
+fi
+
+# ble.sh (attach)
+[[ ${BLE_VERSION-} ]] && ble-attach
 
 # Kiro CLI post block. Keep at the bottom of this file.
 [[ -f "${HOME}/.local/share/kiro-cli/shell/bashrc.post.bash" ]] && builtin source "${HOME}/.local/share/kiro-cli/shell/bashrc.post.bash"
