@@ -5,7 +5,8 @@
   "allowedTools": ["read", "web_search", "web_fetch"],
   "resources": [
     "file://.kiro/steering/**/*.md",
-    "skill://.kiro/skills/**/SKILL.md"
+    "skill://.kiro/skills/**/SKILL.md",
+    "skill://~/.kiro/skills/**/SKILL.md"
   ],
   "toolsSettings": {
     "shell": {

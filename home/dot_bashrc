@@ -1,0 +1,44 @@
+# Kiro CLI pre block. Keep at the top of this file.
+[[ -f "${HOME}/.local/share/kiro-cli/shell/bashrc.pre.bash" ]] && builtin source "${HOME}/.local/share/kiro-cli/shell/bashrc.pre.bash"
+
+# Interactive shell only
+case $- in
+    *i*) ;;
+      *) return;;
+esac
+
+# History
+HISTCONTROL=ignoreboth
+shopt -s histappend
+HISTSIZE=10000
+HISTFILESIZE=20000
+
+# Window resize
+shopt -s checkwinsize
+
+# Aliases
+[ -f ~/.bash_aliases ] && . ~/.bash_aliases
+
+# Completion
+[ -f /usr/share/bash-completion/bash_completion ] && \
+    . /usr/share/bash-completion/bash_completion
+
+# ble.sh (load)
+[[ $- == *i* ]] && [[ -f ~/.local/share/blesh/ble.sh ]] && \
+    source -- ~/.local/share/blesh/ble.sh --attach=none
+
+# Starship
+if command -v starship >/dev/null 2>&1; then
+    eval "$(starship init bash)"
+fi
+
+# mise
+if [[ -x ~/.local/bin/mise ]]; then
+    eval "$(~/.local/bin/mise activate bash)"
+fi
+
+# ble.sh (attach)
+[[ ${BLE_VERSION-} ]] && ble-attach
+
+# Kiro CLI post block. Keep at the bottom of this file.
+[[ -f "${HOME}/.local/share/kiro-cli/shell/bashrc.post.bash" ]] && builtin source "${HOME}/.local/share/kiro-cli/shell/bashrc.post.bash"
