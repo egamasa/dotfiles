@@ -1,4 +1,6 @@
 [tools]
+aws-cli = { version = "latest", symlink_bins = true }
+aws-sam = { version = "latest", symlink_bins = true }
 node = "latest"
 python = "latest"
 ruby = "latest"
