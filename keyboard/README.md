@@ -24,8 +24,9 @@ VIA/QMK keymap JSON ファイルを管理している。
 | 物理キー | 送信キー | 説明 |
 |---|---|---|
 | `CapsLock` | `L ctrl` | CapsLock を Ctrl に変更 |
-| `Mic` | `C(KC_D)` | Ctrl+D（Google Meet マイク ON/OFF） |
+| `Mic` | `G(KC_H)` | Win+H（音声入力） |
 | `BL` | `BL Toggle` | バックライト点灯 ON/OFF |
+| `fn` + `Mic` | `LAG(KC_K)` | Win+Alt+K（ユニバーサルマイクミュート） |
 | `fn` + `Esc` | `Sleep` | スリープ |
 | `fn` + `BL` | `BL Cycle` | バックライト点灯パターン切り替え |
 | `fn` + `PgUp` | `BL +` | バックライト輝度 ＋ |
